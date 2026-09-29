@@ -90,7 +90,7 @@ go run ./examples/hello -data ~/voicevox_core -style 0 -text "こんにちは"
 
 ## Voices
 
-These are the talk styles in the 0.16.0 voice models from the downloader. Pass the id as the style to `TTS` or `CreateAudioQuery`, and load the model file that contains it. To list the styles at runtime, call `VoiceModelFile.Metas()` or `Synthesizer.Metas()`.
+These are the talk styles in the 0.16.0 voice models from the downloader. Pass the id as the style to `TTS` or `CreateAudioQuery`, and load the model file that contains it. To list the styles at runtime, call `VoiceModelFile.Metas()` or `Synthesizer.Metas()`. The romanized names come from the character ids in the [VOICEVOX website source](https://github.com/VOICEVOX/voicevox_blog/tree/master/src/constants/characterInfos).
 
 Each character has its own terms. See the [VOICEVOX website](https://voicevox.hiroshiba.jp/) for details.
 
@@ -99,49 +99,49 @@ Each character has its own terms. See the [VOICEVOX website](https://voicevox.hi
 
 | Character | Styles (id, name) | Model files |
 | --- | --- | --- |
-| 四国めたん | 2 ノーマル (normal), 0 あまあま (sweet), 4 セクシー (sexy), 6 ツンツン (prickly), 36 ささやき (whisper), 37 ヒソヒソ (hushed) | 0.vvm, 5.vvm |
-| ずんだもん | 3 ノーマル (normal), 1 あまあま (sweet), 5 セクシー (sexy), 7 ツンツン (prickly), 22 ささやき (whisper), 38 ヒソヒソ (hushed), 75 ヘロヘロ (exhausted), 76 なみだめ (teary) | 0.vvm, 5.vvm, 15.vvm |
-| 春日部つむぎ | 8 ノーマル (normal) | 0.vvm |
-| 波音リツ | 9 ノーマル (normal), 65 クイーン (queen) | 3.vvm |
-| 雨晴はう | 10 ノーマル (normal) | 0.vvm |
-| 玄野武宏 | 11 ノーマル (normal), 39 喜び (joy), 40 ツンギレ (snappy), 41 悲しみ (sadness) | 4.vvm, 10.vvm |
-| 白上虎太郎 | 12 ふつう (normal), 32 わーい (yay), 33 びくびく (nervous), 34 おこ (angry), 35 びえーん (crying) | 9.vvm |
-| 青山龍星 | 13 ノーマル (normal), 81 熱血 (passionate), 82 不機嫌 (grumpy), 83 喜び (joy), 84 しっとり (calm), 85 かなしみ (sadness), 86 囁き (whisper) | 15.vvm |
-| 冥鳴ひまり | 14 ノーマル (normal) | 1.vvm |
-| 九州そら | 16 ノーマル (normal), 15 あまあま (sweet), 17 セクシー (sexy), 18 ツンツン (prickly), 19 ささやき (whisper) | 2.vvm, 5.vvm |
-| もち子さん | 20 ノーマル (normal), 66 セクシー／あん子 (sexy/Anko), 77 泣き (crying), 78 怒り (angry), 79 喜び (joy), 80 のんびり (relaxed) | 15.vvm |
-| 剣崎雌雄 | 21 ノーマル (normal) | 4.vvm |
+| 四国めたん (Shikoku Metan) | 2 ノーマル (normal), 0 あまあま (sweet), 4 セクシー (sexy), 6 ツンツン (prickly), 36 ささやき (whisper), 37 ヒソヒソ (hushed) | 0.vvm, 5.vvm |
+| ずんだもん (Zundamon) | 3 ノーマル (normal), 1 あまあま (sweet), 5 セクシー (sexy), 7 ツンツン (prickly), 22 ささやき (whisper), 38 ヒソヒソ (hushed), 75 ヘロヘロ (exhausted), 76 なみだめ (teary) | 0.vvm, 5.vvm, 15.vvm |
+| 春日部つむぎ (Kasukabe Tsumugi) | 8 ノーマル (normal) | 0.vvm |
+| 波音リツ (Namine Ritsu) | 9 ノーマル (normal), 65 クイーン (queen) | 3.vvm |
+| 雨晴はう (Amehare Hau) | 10 ノーマル (normal) | 0.vvm |
+| 玄野武宏 (Kurono Takehiro) | 11 ノーマル (normal), 39 喜び (joy), 40 ツンギレ (snappy), 41 悲しみ (sadness) | 4.vvm, 10.vvm |
+| 白上虎太郎 (Shirakami Kotarou) | 12 ふつう (normal), 32 わーい (yay), 33 びくびく (nervous), 34 おこ (angry), 35 びえーん (crying) | 9.vvm |
+| 青山龍星 (Aoyama Ryusei) | 13 ノーマル (normal), 81 熱血 (passionate), 82 不機嫌 (grumpy), 83 喜び (joy), 84 しっとり (calm), 85 かなしみ (sadness), 86 囁き (whisper) | 15.vvm |
+| 冥鳴ひまり (Meimei Himari) | 14 ノーマル (normal) | 1.vvm |
+| 九州そら (Kyushu Sora) | 16 ノーマル (normal), 15 あまあま (sweet), 17 セクシー (sexy), 18 ツンツン (prickly), 19 ささやき (whisper) | 2.vvm, 5.vvm |
+| もち子さん (Mochikosan) | 20 ノーマル (normal), 66 セクシー／あん子 (sexy/Anko), 77 泣き (crying), 78 怒り (angry), 79 喜び (joy), 80 のんびり (relaxed) | 15.vvm |
+| 剣崎雌雄 (Kenzaki Mesuo) | 21 ノーマル (normal) | 4.vvm |
 | WhiteCUL | 23 ノーマル (normal), 24 たのしい (happy), 25 かなしい (sad), 26 びえーん (crying) | 8.vvm |
-| 後鬼 | 27 人間ver. (human), 28 ぬいぐるみver. (plush), 87 人間（怒り）ver. (human, angry), 88 鬼ver. (demon) | 7.vvm, 16.vvm |
+| 後鬼 (Goki) | 27 人間ver. (human), 28 ぬいぐるみver. (plush), 87 人間（怒り）ver. (human, angry), 88 鬼ver. (demon) | 7.vvm, 16.vvm |
 | No.7 | 29 ノーマル (normal), 30 アナウンス (announcer), 31 読み聞かせ (storytelling) | 6.vvm |
-| ちび式じい | 42 ノーマル (normal) | 10.vvm |
-| 櫻歌ミコ | 43 ノーマル (normal), 44 第二形態 (second form), 45 ロリ (childlike) | 11.vvm |
-| 小夜/SAYO | 46 ノーマル (normal) | 15.vvm |
-| ナースロボ＿タイプＴ | 47 ノーマル (normal), 48 楽々 (relaxed), 49 恐怖 (fear), 50 内緒話 (secret talk) | 11.vvm |
-| †聖騎士 紅桜† | 51 ノーマル (normal) | 12.vvm |
-| 雀松朱司 | 52 ノーマル (normal) | 12.vvm |
-| 麒ヶ島宗麟 | 53 ノーマル (normal) | 12.vvm |
-| 春歌ナナ | 54 ノーマル (normal) | 13.vvm |
-| 猫使アル | 55 ノーマル (normal), 56 おちつき (calm), 57 うきうき (cheerful), 110 つよつよ (strong), 111 へろへろ (exhausted) | 13.vvm, 21.vvm |
-| 猫使ビィ | 58 ノーマル (normal), 59 おちつき (calm), 60 人見知り (shy), 112 つよつよ (strong) | 13.vvm, 21.vvm |
-| 中国うさぎ | 61 ノーマル (normal), 62 おどろき (surprised), 63 こわがり (scared), 64 へろへろ (exhausted) | 3.vvm |
-| 栗田まろん | 67 ノーマル (normal) | 14.vvm |
-| あいえるたん | 68 ノーマル (normal) | 14.vvm |
-| 満別花丸 | 69 ノーマル (normal), 70 元気 (energetic), 71 ささやき (whisper), 72 ぶりっ子 (cutesy), 73 ボーイ (boy) | 14.vvm |
-| 琴詠ニア | 74 ノーマル (normal) | 14.vvm |
+| ちび式じい (Chibishikiji) | 42 ノーマル (normal) | 10.vvm |
+| 櫻歌ミコ (Ouka Miko) | 43 ノーマル (normal), 44 第二形態 (second form), 45 ロリ (childlike) | 11.vvm |
+| 小夜/SAYO (Sayo) | 46 ノーマル (normal) | 15.vvm |
+| ナースロボ＿タイプＴ (Nurserobo Type T) | 47 ノーマル (normal), 48 楽々 (relaxed), 49 恐怖 (fear), 50 内緒話 (secret talk) | 11.vvm |
+| †聖騎士 紅桜† (Horinaito Benizakura) | 51 ノーマル (normal) | 12.vvm |
+| 雀松朱司 (Wakamatsu Akashi) | 52 ノーマル (normal) | 12.vvm |
+| 麒ヶ島宗麟 (Kigashima Sourin) | 53 ノーマル (normal) | 12.vvm |
+| 春歌ナナ (Haruka Nana) | 54 ノーマル (normal) | 13.vvm |
+| 猫使アル (Nekotsuka Aru) | 55 ノーマル (normal), 56 おちつき (calm), 57 うきうき (cheerful), 110 つよつよ (strong), 111 へろへろ (exhausted) | 13.vvm, 21.vvm |
+| 猫使ビィ (Nekotsuka Bi) | 58 ノーマル (normal), 59 おちつき (calm), 60 人見知り (shy), 112 つよつよ (strong) | 13.vvm, 21.vvm |
+| 中国うさぎ (Chugoku Usagi) | 61 ノーマル (normal), 62 おどろき (surprised), 63 こわがり (scared), 64 へろへろ (exhausted) | 3.vvm |
+| 栗田まろん (Kurita Maron) | 67 ノーマル (normal) | 14.vvm |
+| あいえるたん (Aierutan) | 68 ノーマル (normal) | 14.vvm |
+| 満別花丸 (Manbetsu Hanamaru) | 69 ノーマル (normal), 70 元気 (energetic), 71 ささやき (whisper), 72 ぶりっ子 (cutesy), 73 ボーイ (boy) | 14.vvm |
+| 琴詠ニア (Kotoyomi Nia) | 74 ノーマル (normal) | 14.vvm |
 | Voidoll | 89 ノーマル (normal) | 17.vvm |
-| ぞん子 | 90 ノーマル (normal), 91 低血圧 (groggy), 92 覚醒 (awakened), 93 実況風 (commentator) | 18.vvm |
-| 中部つるぎ | 94 ノーマル (normal), 95 怒り (angry), 96 ヒソヒソ (hushed), 97 おどおど (timid), 98 絶望と敗北 (despair and defeat) | 18.vvm |
-| 離途 | 99 ノーマル (normal), 101 シリアス (serious) | 19.vvm |
-| 黒沢冴白 | 100 ノーマル (normal) | 19.vvm |
-| ユーレイちゃん | 102 ノーマル (normal), 103 甘々 (sweet), 104 哀しみ (sorrow), 105 ささやき (whisper), 106 ツクモちゃん (Tsukumo-chan) | 20.vvm |
-| 東北ずん子 | 107 ノーマル (normal) | 21.vvm |
-| 東北きりたん | 108 ノーマル (normal) | 21.vvm |
-| 東北イタコ | 109 ノーマル (normal) | 21.vvm |
-| あんこもん | 113 ノーマル (normal), 114 つよつよ (strong), 115 よわよわ (weak), 116 けだるげ (languid), 117 ささやき (whisper) | 22.vvm, 23.vvm |
-| 夜語トバリ | 118 ノーマル (normal), 119 明るい (bright), 120 哀しみ (sorrow), 121 呆れ (exasperated) | 24.vvm |
-| 暁記ミタマ | 122 ノーマル (normal), 123 怒り (angry), 124 哀しみ (sorrow), 125 ささやき (whisper) | 24.vvm |
-| 里石ユカ | 126 つぼみ (Tsubomi) | 24.vvm |
+| ぞん子 (Zonko) | 90 ノーマル (normal), 91 低血圧 (groggy), 92 覚醒 (awakened), 93 実況風 (commentator) | 18.vvm |
+| 中部つるぎ (Chubu Tsurugi) | 94 ノーマル (normal), 95 怒り (angry), 96 ヒソヒソ (hushed), 97 おどおど (timid), 98 絶望と敗北 (despair and defeat) | 18.vvm |
+| 離途 (Rito) | 99 ノーマル (normal), 101 シリアス (serious) | 19.vvm |
+| 黒沢冴白 (Kurosawa Kohaku) | 100 ノーマル (normal) | 19.vvm |
+| ユーレイちゃん (Yureichan) | 102 ノーマル (normal), 103 甘々 (sweet), 104 哀しみ (sorrow), 105 ささやき (whisper), 106 ツクモちゃん (Tsukumo-chan) | 20.vvm |
+| 東北ずん子 (Tohoku Zunko) | 107 ノーマル (normal) | 21.vvm |
+| 東北きりたん (Tohoku Kiritan) | 108 ノーマル (normal) | 21.vvm |
+| 東北イタコ (Tohoku Itako) | 109 ノーマル (normal) | 21.vvm |
+| あんこもん (Ankomon) | 113 ノーマル (normal), 114 つよつよ (strong), 115 よわよわ (weak), 116 けだるげ (languid), 117 ささやき (whisper) | 22.vvm, 23.vvm |
+| 夜語トバリ (Yogatari Tobari) | 118 ノーマル (normal), 119 明るい (bright), 120 哀しみ (sorrow), 121 呆れ (exasperated) | 24.vvm |
+| 暁記ミタマ (Akatsuki Mitama) | 122 ノーマル (normal), 123 怒り (angry), 124 哀しみ (sorrow), 125 ささやき (whisper) | 24.vvm |
+| 里石ユカ (Satoishi Yuka) | 126 つぼみ (Tsubomi) | 24.vvm |
 
 </details>
 
