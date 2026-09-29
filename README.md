@@ -1,5 +1,7 @@
 # voicevox
 
+English | [日本語](./README.ja.md)
+
 [![Go Reference](https://pkg.go.dev/badge/github.com/hybridgroup/voicevox.svg)](https://pkg.go.dev/github.com/hybridgroup/voicevox)
 
 Go bindings for [VOICEVOX core](https://github.com/VOICEVOX/voicevox_core), for Japanese text to speech that runs locally.
@@ -36,10 +38,12 @@ This creates the following layout:
 ```
 voicevox_core/
   c_api/lib/libvoicevox_core.so
-  onnxruntime/lib/libvoicevox_onnxruntime.so.1.23.2
+  onnxruntime/lib/libvoicevox_onnxruntime.so.<version>
   dict/open_jtalk_dic_utf_8-1.11/
   models/vvms/*.vvm
 ```
+
+`LoadOnnxruntime` uses the recommended ONNX Runtime version if it is in the directory. Otherwise it uses the newest version it finds there.
 
 ## Example
 
